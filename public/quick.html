@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Marker Clustering</title>
+    <script src="./bundle.js"></script>
+
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtx5KlexIEYN2Jk6GFFpe8fqOHJm_XM6M">
+    </script>
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 80%;
+        margin: auto;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .button-on{
+        background-color: green;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id='buttons'>
+      <button id='toggleRadar' >Toggle Radar</button>
+      <button id='toggleRainAndSnow'>Toggle Rain and Snow/Ice</button>
+      <button id='toggleStormCells'> toggleStormCells</button>
+      <button id='toggleRandomCoolStuff'>toggleRandomCoolStuff</button>
+      <button id='staticRadarToggleButton'>staticRadarToggleButton</button>
+      <button id="startAnimation">start</button>
+      <button id='pauseAnimation'>pause</button>
+      <button id='stopAnimation'> stop</button>
+    </div>
+    <div id="map"></div>
+    <div id='dataBox'>
+        <label id='label'>
+
+        </label>
+        <ul id='list'>
+
+        </ul>
+    </div>
+  </body>
+</html>
